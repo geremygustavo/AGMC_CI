@@ -26,5 +26,5 @@ environment.yml
 *.pem
 .vagrant
 gradle-5.2.1
-build
-.gradle
+build/
+.gradle/
