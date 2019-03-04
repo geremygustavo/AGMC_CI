@@ -38,7 +38,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh './store-webapp-sample/gradlew jar -p store-webapp-sample'                
+                sh './store-webapp-sample/gradlew jar -p store-webapp-sample'
+                sh './gradlew --info sonarqube'                
             }
         }
     }

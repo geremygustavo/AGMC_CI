@@ -8,6 +8,7 @@ plugins {
     id 'war'
     id "org.gretty" version "2.2.0"
     id 'jacoco'
+    id "org.sonarqube" version "2.7"
 }
 
 repositories {
@@ -69,5 +70,14 @@ jacocoTestReport {
         xml.enabled false
         csv.enabled false
         html.destination file("${buildDir}/jacocoHtml")
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "geremygustavo_AGMC_CI"
+        property "sonar.organization", "geremygustavo-github"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.login", "bc2ba9da9a7c83298e4532713915aa9eb8620a65"
     }
 }
