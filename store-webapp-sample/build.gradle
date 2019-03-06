@@ -75,7 +75,7 @@ jacocoTestReport {
 
 sonarqube {
     properties {
-        property "sonar.host.url", "http://10.28.110.197:9000 "
+        property "sonar.host.url", "http://10.28.110.197:9000"
         property "sonar.login", "8b63a0ca3e45bf789662f6ecc65a30c3138637db"
     }
 }
